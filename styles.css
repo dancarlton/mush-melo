@@ -8,7 +8,7 @@
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(29, 17, 83, 0.3), rgba(38, 35, 50, 0.3));
+  background-image: linear-gradient(rgba(29, 17, 83, 0.15), rgba(38, 35, 50, 0.15));
   position: relative;
   padding: 0 5%;
   display: flex;
