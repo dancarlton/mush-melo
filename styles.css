@@ -14,6 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 nav {
@@ -67,8 +68,8 @@ nav h1:hover {
   padding: 14px 70px;
   border-radius: 50px;
   text-align: center;
-  margin-top: 450px;
-  margin-bottom: 100px;
+  margin-top: 600px;
+  margin-bottom: 50px;
 }
 
 .construction {
@@ -95,5 +96,60 @@ nav h1:hover {
   .hero-video {
     width: auto;
     height: 100%;
+  }
+}
+
+
+@media (max-width: 768px) { /* Styles for tablet-sized screens */
+  .hero {
+    padding: 0 10%;
+  }
+
+  nav {
+    padding: 20px 5%;
+  }
+
+  nav h1 {
+    font-size: 60px;
+  }
+
+  .content a {
+    padding: 14px 40px;
+    margin-top: 800px;
+    margin-bottom: 20px;
+  }
+
+  .hero-video {
+    right: -1000px;
+  }
+}
+
+@media (max-width: 480px) { /* Styles for phone-sized screens */
+  .hero {
+    padding: 0 8%;
+  }
+
+  nav {
+    padding: 20px 3%;
+  }
+
+  nav h1 {
+    font-size: 40px;
+  }
+
+  .content a {
+    padding: 10px 30px;
+    margin-top: 780px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .content p {
+    margin-top: 10px;
+    font-size: large;
+  }
+
+  .hero-video {
+    right: -1150px;
   }
 }
