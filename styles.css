@@ -5,10 +5,25 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  /* position: fixed; */
+  /* overflow-y: scroll; */
+  /* -webkit-overflow-scrolling: touch; */
+}
+
 .hero {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(rgba(29, 17, 83, 0.3), rgba(38, 35, 50, 0.3));
+  background-image: linear-gradient(
+    rgba(29, 17, 83, 0.3),
+    rgba(38, 35, 50, 0.3)
+  );
   position: relative;
   padding: 0 5%;
   display: flex;
@@ -55,9 +70,9 @@ nav h1:hover {
 }
 
 .content {
-    text-align: center;
-    flex-direction: row;
-    margin-bottom: 200px;
+  text-align: center;
+  flex-direction: row;
+  margin-bottom: 200px;
 }
 
 .content a {
@@ -87,8 +102,8 @@ nav h1:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: left center;}
-
+  object-position: left center;
+}
 
 @media (max-aspect-ratio: 16/9) {
   .hero-video {
@@ -97,7 +112,8 @@ nav h1:hover {
   }
 }
 
-@media (max-width: 768px) { /* Styles for tablet-sized screens */
+@media (max-width: 768px) {
+  /* Styles for tablet-sized screens */
   .hero {
     padding: 0 10%;
   }
@@ -112,7 +128,7 @@ nav h1:hover {
 
   .content a {
     padding: 14px 40px;
-    margin-top: 800px;
+    margin-top: 700px;
     /* margin-bottom: 20px; */
   }
   .content p {
@@ -124,7 +140,8 @@ nav h1:hover {
   }
 }
 
-@media (max-width: 480px) { /* Styles for phone-sized screens */
+@media (max-width: 480px) {
+  /* Styles for phone-sized screens */
   .hero {
     padding: 0 8%;
   }
@@ -139,13 +156,13 @@ nav h1:hover {
 
   .content a {
     padding: 10px 30px;
-    margin-top: 780px;
+    margin-top: 600px;
     /* margin-bottom: 10px; */
     font-size: 18px;
   }
 
   .content p {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     font-size: large;
   }
 
